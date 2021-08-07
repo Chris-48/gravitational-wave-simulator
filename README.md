@@ -22,6 +22,4 @@ This simulation was conceived using the following tools:
 
 * Shell Script.
 
-    Shell Script just execute `main.py` with the  desired comfiguration for the presentation.
-
-    (naming a file "main" is a horrible ideia)
+    Shell Script just execute the file with the desired comfiguration for the presentation.
