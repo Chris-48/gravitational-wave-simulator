@@ -18,7 +18,7 @@ This simulation was conceived using the following tools:
 
 * Numpy library
 
-    Numpy was used to transcribe the mathematical function $\ f(t,x,y) = cos( \pi \sqrt{x^2 + y^2} - \frac{ \pi t }{2})$ to code.
+    Numpy was used to transcribe the mathematical function, ![](https://latex.codecogs.com/svg.latex?\Large&space;\small\color{white}%20f(t,x,y)%20=%20cos(%20\pi%20\sqrt{x^2%20+%20y^2}%20-%20\frac{%20\pi%20t%20}{2})), to code.
 
 * Shell Script.
 
