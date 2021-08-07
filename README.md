@@ -1,4 +1,4 @@
-# Gravitational Waves Simulation
+# Gravitational Wave Simulation
 
 ![gravitational wave image from the simulation](./img/gw.png)
 
