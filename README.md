@@ -3,7 +3,7 @@
 ![gravitational wave image from the simulation](./img/gw.png)
 
 ## Context
-This simulation was created for the Bonja Science project where the students were given the task to search about a topic from the [article](http://www.sbfisica.org.br/rbef/pdf/363504.pdf)  and somehow present the topic that they have choosen to the other students.
+This simulation was created for the Bonja Science project where the students were given the task to research about a topic from the [article](http://www.sbfisica.org.br/rbef/pdf/363504.pdf) and somehow present the topic that they have choosen to the other students.
 
 ## Tools
 This simulation was conceived using the following tools:
