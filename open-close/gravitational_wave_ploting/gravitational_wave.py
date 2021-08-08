@@ -4,7 +4,7 @@ from .plane_type_functions import map_wave_fucntion_types
 
 
 @dataclass
-class gravitationalWaves():
+class gravitationalWave():
     """
     Class responsible for ploting the gratitational wave.
     """

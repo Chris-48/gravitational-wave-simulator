@@ -1,4 +1,4 @@
-from gravitational_waves_ploting.gravitational_waves import gravitationalWaves
+from gravitational_wave_ploting.gravitational_wave import gravitationalWave
 import matplotlib.pyplot as plt
 from sys import argv
 import numpy as np
@@ -19,7 +19,7 @@ def main() -> None:
 
 	plt.axis( "off" )
 
-	gw = gravitationalWaves(argv[1], ax, (X, Y), [77, 14] )
+	gw = gravitationalWave(argv[1], ax, (X, Y), [77, 14] )
 
 	gw.execute()
 

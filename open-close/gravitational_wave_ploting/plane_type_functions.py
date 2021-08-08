@@ -1,7 +1,7 @@
+from .gravitational_wave_function_of_time import gravitational_wave_function_of_time
 from mpl_toolkits.mplot3d.axes3d import Axes3D
 import matplotlib.pyplot as plt
 from types import FunctionType
-from numpy import ndarray
 import numpy as np
 
 STOP_LINSPACE = 24
@@ -9,17 +9,7 @@ NUM_LINSPACE = 100
 FRAME_DISPLAY_INTERVAL = .084
 
 
-def gravitational_wave_function_of_time( X: ndarray, Y: ndarray, T: float ):
-    """
-    The four dimensional function that represents a gravitational wave in the plane.
-
-    `f(t, x, y) = cos(π√(x^2 + y^2) - (tπ)/2)`
-    """
-
-    return 1/4 * np.cos(1/2 * np.pi * np.sqrt(X**2 + Y**2) - (np.pi*T)/2)
-
-
-def static_plane( ax: Axes3D, X: ndarray, Y: ndarray ) -> None:
+def static_plane( ax: Axes3D, X: np.ndarray, Y: np.ndarray ) -> None:
     """
     View of the R^3 plane without camera motion.
     """
@@ -38,7 +28,7 @@ def rotation_plane() -> FunctionType:
     """
     azimuth = 0
 
-    def _rotation_plane( ax: Axes3D, X: ndarray, Y: ndarray, elevation: float, start_azimuth: float ) -> None:
+    def _rotation_plane( ax: Axes3D, X: np.ndarray, Y: np.ndarray, elevation: float, start_azimuth: float ) -> None:
 
         nonlocal azimuth
 
