@@ -18,7 +18,7 @@ This simulation was conceived using the following tools:
 
 * Numpy library
 
-    Numpy was used to transcribe the mathematical function, ![](https://latex.codecogs.com/svg.latex?\Large&space;\small\color{white}%20f(t,x,y)%20=%20A%20\times%20cos(\lambda%20\pi%20\sqrt{x^2%20+%20y^2}%20-%20\frac{%20\pi%20t%20}{2})), to code.
+    Numpy was used to transcribe the mathematical function, ![function](./img/func.svg), to code.
 
 * Shell Script.
 
