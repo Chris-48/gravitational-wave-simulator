@@ -2,6 +2,9 @@ from gravitational_wave_ploting.gravitational_wave import gravitationalWave
 import matplotlib.pyplot as plt
 from sys import argv
 import numpy as np
+import matplotlib as mpl
+
+mpl.rcParams['toolbar'] = 'None'
 
 
 def main() -> None:
