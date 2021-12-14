@@ -15,8 +15,8 @@ def main() -> None:
 	ax = fig.add_subplot( projection='3d' )
 	ax.set_zlim( -1, 1 )
 
-	xs = np.linspace( -12, 12, 50 )
-	ys = np.linspace( -12, 12, 50 )
+	xs = np.linspace( -6, 6, 35 )
+	ys = np.linspace( -6, 6, 35 )
 
 	X, Y = np.meshgrid( xs, ys )
 

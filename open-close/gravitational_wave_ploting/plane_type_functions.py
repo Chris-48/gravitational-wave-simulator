@@ -1,11 +1,11 @@
-from .gravitational_wave_function_of_time import gravitational_wave_function_of_time
+from .gravitational_wave_function_of_time import improved_gravitational_wave_function_of_time as gwf
 from mpl_toolkits.mplot3d.axes3d import Axes3D
 import matplotlib.pyplot as plt
 from types import FunctionType
 import numpy as np
 
-STOP_LINSPACE = 24
-NUM_LINSPACE = 100
+STOP_LINSPACE = 360
+NUM_LINSPACE = 1000
 FRAME_DISPLAY_INTERVAL = .084
 
 
@@ -15,8 +15,8 @@ def static_plane( ax: Axes3D, X: np.ndarray, Y: np.ndarray ) -> None:
     """
     for T in np.linspace(0, STOP_LINSPACE, NUM_LINSPACE):
 
-        Z = gravitational_wave_function_of_time(X, Y, T)
-        wframe = ax.plot_wireframe(X, Y, Z,  rstride=2, cstride=2)
+        Z = gwf(X, Y, T)
+        wframe = ax.plot_surface(X, Y, Z,  cmap=plt.cm.viridis)
 
         plt.pause(FRAME_DISPLAY_INTERVAL)
         ax.collections.remove(wframe)
@@ -32,15 +32,15 @@ def rotation_plane() -> FunctionType:
 
         nonlocal azimuth
 
-        azimuth = start_azimuth if azimuth == 0 else azimuth
+        azimuth = start_azimuth if not azimuth else azimuth
 
         for T in np.linspace(0, STOP_LINSPACE, NUM_LINSPACE):
 
             azimuth += .2
             ax.view_init(elev=elevation, azim=azimuth )
 
-            Z = gravitational_wave_function_of_time(X, Y, T)
-            wframe = ax.plot_wireframe(X, Y, Z,  rstride=2, cstride=2)
+            Z = gwf(X, Y, T)
+            wframe = ax.plot_surface(X, Y, Z,  cmap=plt.cm.viridis)
 
             plt.pause(FRAME_DISPLAY_INTERVAL)
             ax.collections.remove(wframe)
